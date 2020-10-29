@@ -195,3 +195,5 @@ Create a Spring Boot Application that connects with MongoDB.
     * Todos that contains a description with a length greater than 30 characters        
 
 8. Implement the queries of the previous step using *derived query methods* in your repository interface. Is it possible to implement all of them?
+
+   The third query can not implemented, the others querys are in Application class 
