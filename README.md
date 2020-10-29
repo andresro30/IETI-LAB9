@@ -60,27 +60,33 @@ Create a Spring Boot Application that connects with MongoDB.
 
 - How many customers were created in the database?
 
-There are 5 costumer in database
-   Image
+   Answer: There are 5 costumer in database
+   
+   ![](img/costumers.PNG)
 
 - Where is the *findAll* method implemented?
 
-    In SimpleMongoRepository<T, ID>  Class and this class implement to MongoRepository<T, ID>.
+    Answer:  In SimpleMongoRepository<T, ID>  Class and this class implement to MongoRepository<T, ID>.
 
 - Suppose you have more than 1000 products in your database. How would you implement a method for supporting pagination and return pages of 50 products to your frontend?
-    I would implement a new method in ProductRepository class that receive a Pageable object like argument. When I call this method I define a size of PageRequest to 50.
+    
+    Answer: I would implement a new method in ProductRepository class that receive a Pageable object like argument. When I call this method I define a size of PageRequest to 50.
 - How many products contain the "plus" word in their description?
-    There are four products that contains the "plus" in their description.
-    Paste productos.png
+   
+   Answer:  There are four products that contains the "plus" in their description.
+    
+    ![](img/products.PNG)
     
 - How many products are returned by the *findByDescriptionContaining* query? Why?
-    The result of findByDescriptionContaining is two products because the size of PageRquest is this number. So, this mehotd only take the first two productos that contains the "plus" in their description.
     
-    paste result.. png
+
+  Answer: The result of findByDescriptionContaining is two products because the size of PageRquest is this number. So, this mehotd only take the first two productos that contains the "plus" in their description.
+    
+    ![](img/resultDescription.PNG)
     
 - Which are the collection names where the objects are stored? Where are those names assigned?
     
-    In database are two collections: customer and products. I guess that this names are assigned automatically.
+    Answer: In database are two collections: customer and products. I guess that this names are assigned automatically.
     
 5. Create two more models (User and Todo) with the following structure:
 
